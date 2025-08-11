@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FLAIR Lab - IISc Bangalore</title>
+    <meta name="description" content="FLAIR Lab at Indian Institute of Science, Bangalore. Research in Natural Language Processing, Machine Learning, and AI Safety.">
+	<link rel="stylesheet" href="assets/css/steller.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/logo2.png" alt="FLAIR Lab"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#people">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+                    <div class="infos">
+                        <h6 class="subtitle">Welcome to</h6>
+                        <h6 class="title">FLAIR Lab</h6>
+                        <p class="subtitle">Department of Computational Sciences</p>
+                        <p class="text-muted">Indian Institute of Science, Bangalore</p>
+                    </div>
+                    <div class="image-slider">
+                        <div class="slider-container">
+                            <div class="slide active">
+                                <img src="assets/imgs/slider/slide1.jpg" alt="Research Image 1">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imgs/slider/slide2.jpg" alt="Research Image 2">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imgs/slider/slide3.jpg" alt="Research Image 3">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imgs/slider/slide4.jpg" alt="Research Image 4">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imgs/slider/slide5.jpg" alt="Research Image 5">
+                            </div>
+                        </div>
+                        <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                            <i class="ti-angle-left"></i>
+                        </button>
+                        <button class="slider-arrow next" onclick="changeSlide(1)">
+                            <i class="ti-angle-right"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
+                    </div>
+        </div>  
+    </header>
+    <!-- End of Page Header -->
+    
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/iisc-building.jpg" alt="IISc Campus" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">About FLAIR Lab</h6>
+                    <p class="subtitle">CDS, IISc</p>
+                    <p class = 'small'>
+                        Our group broadly works in the areas of Natural Language Processing (NLP) and Machine Learning (ML). From the outset, the lab is envisioned to be diverse, transparent, friendly and highly collaborative. We are grateful to Schmidt Sciences, Google Research, Adobe Inc., Microsoft Research, National Payments Corporations of India (NPCI) and Pratiksha Trust for generously supporting our group's research.
+                    </p>
+                    <div class="buttons pt-3">
+                        <a href="#contact">
+                            <button class="btn btn-primary rounded">JOIN US</button>
+                        </a>
+                        <a href="#research">
+                            <button class="btn btn-dark rounded">OUR RESEARCH</button>
+                        </a>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research section -->
+    <section id="research" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle"></h6>
+            <h6 class="section-title mb-4">Research Areas</h6>
+            <p class="mb-5 pb-4">Our research focuses on developing robust, fair, and interpretable AI systems with applications in Natural Language Processing.</p>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <h5 class="font-weight-bold">Robustness in NLP</h5>
+                            <div class="text-left">
+                                <p class="mb-2 small">
+                                    Developing neural models that are robust to adversarial attacks and distribution shifts.
+                                    We focus on understanding vulnerabilities in current NLP systems and creating defenses.
+                                </p>
+                                <ul class="small">
+                                    <li>Adversarial robustness</li>
+                                    <li>Out-of-distribution generalization</li>
+                                    <li>Certified defenses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <h5 class="font-weight-bold">Fairness in ML</h5>
+                            <div class="text-left">
+                                <p class="mb-2 small">
+                                    Ensuring machine learning systems are fair and unbiased across different demographic groups.
+                                    We develop methods to detect and mitigate bias in AI systems.
+                                </p>
+                                <ul class="small">
+                                    <li>Bias detection and mitigation</li>
+                                    <li>Fairness metrics</li>
+                                    <li>Algorithmic auditing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <h5 class="font-weight-bold">Interpretability</h5>
+                            <div class="text-left">
+                                <p class="mb-2 small">
+                                    Making AI systems more transparent and interpretable to humans.
+                                    We develop methods to explain model decisions and understand their behavior.
+                                </p>
+                                <ul class="small">
+                                    <li>Model explanations</li>
+                                    <li>Attention analysis</li>
+                                    <li>Probing studies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications section -->
+    <section id="publications" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Publications</h6>
+            <h6 class="section-title mb-4">Recent Publications & Preprints</h6>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-primary">
+                        <div class="card-body text-left">
+                            <h5 class="card-title text-primary">Selected Publications</h5>
+                            <div class="publication-list" id="publications-list">
+                                <!-- Publications will be loaded here -->
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <a href="https://danishpruthi.com/publications/" class="btn btn-primary">
+                                    View All Publications
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- People section -->
+    <section id="people" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Our Team</h6>
+            <h6 class="section-title mb-4">Meet the FLAIR Lab community</h6>
+
+            <!-- Principal Investigator -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card border">
+                                <div class="card-body text-center">
+                                    <img src="assets/imgs/danish-pruthi.jpg" alt="Dr. Danish Pruthi" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                    <h5 class="font-weight-bold">Dr. Danish Pruthi</h5>
+                                    <p class="text-muted">Assistant Professor</p>
+                                    <p class="small">Department of Computer Science and Automation, IISc</p>
+                                    <div class="socials">
+                                        <a href="https://danishpruthi.com" class="text-primary"><i class="ti-world"></i></a>
+                                        <a href="https://scholar.google.com/citations?user=XXXXXX" class="text-primary"><i class="ti-book"></i></a>
+                                        <a href="https://twitter.com/danishpruthi" class="text-primary"><i class="ti-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Members -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="row" id="all-members">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h5 class="text-left mb-4">Alumni</h5>
+                    <div class="alumni-list" id="alumni-members">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Contact</h6>
+            <h6 class="section-title mb-4">Get in Touch</h6>
+            <p class="mb-5 pb-4">Interested in joining our lab or collaborating with us? We'd love to hear from you!</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card border h-100">
+                        <div class="card-body">
+                            <h5 class="font-weight-bold mb-3">Join Our Lab</h5>
+                            <p class="text-left">We are always looking for motivated students and researchers. If you're interested in:</p>
+                            <ul class="text-left">
+                                <li>PhD positions in Computer Science</li>
+                                <li>MTech thesis opportunities</li>
+                                <li>Research internships</li>
+                                <li>Postdoctoral positions</li>
+                            </ul>
+                            <p class="text-left">Please send your CV and research interests to Dr. Danish Pruthi.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card border h-100">
+                        <div class="card-body">
+                            <h5 class="font-weight-bold mb-3">Location & Contact</h5>
+                            <div class="text-left">
+                                <p><strong>Address:</strong><br>
+                                Department of Computer Science and Automation<br>
+                                Indian Institute of Science<br>
+                                Bangalore 560012, India</p>
+                                
+                                <p><strong>Email:</strong><br>
+                                <a href="mailto:danish@iisc.ac.in">danish@iisc.ac.in</a></p>
+                                
+                                <p><strong>Office:</strong> Room XXX, CSA Department</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12">
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#" target="_blank">FLAIR Lab, IISc</a></p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- End of page footer -->
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+
+    <!-- Image slider script -->
+    <script>
+        let slideIndex = 1;
+        let slideInterval;
+
+        function showSlide(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            
+            slides[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        function changeSlide(n) {
+            clearInterval(slideInterval);
+            slideIndex += n;
+            showSlide(slideIndex);
+            startAutoSlide();
+        }
+
+        function currentSlide(n) {
+            clearInterval(slideInterval);
+            slideIndex = n;
+            showSlide(slideIndex);
+            startAutoSlide();
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 4000);
+        }
+
+        // Initialize slider
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(slideIndex);
+            startAutoSlide();
+        });
+    </script>
+
+    <!-- Load team members -->
+    <script>
+        // Load and display team members from JSON
+        fetch('members.json')
+            .then(response => response.json())
+            .then(data => {
+                const allMembers = data.students;
+
+                function createMemberCard(member) {
+                    const pastExperience = member.past ? `<p class="small text-muted">Previously: ${member.past}</p>` : '';
+                    const interests = member.interests.join(', ');
+                    
+                    // Use member image if available, otherwise show placeholder
+                    const memberImage = member.image_filename 
+                        ? `<img src="assets/imgs/members/${member.image_filename}" alt="${member.name}" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">`
+                        : `<div class="rounded-circle bg-light mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                               <i class="ti-user display-4 text-muted"></i>
+                           </div>`;
+                    
+                    // Make name clickable if website is available
+                    const memberName = member.website && member.website.trim() !== '' 
+                        ? `<a href="${member.website}" target="_blank" class="text-decoration-none"><h6 class="font-weight-bold">${member.name}</h6></a>`
+                        : `<h6 class="font-weight-bold">${member.name}</h6>`;
+                    
+                    return `
+                        <div class="col-md-4 mb-4">
+                            <div class="card border h-100">
+                                <div class="card-body text-center">
+                                    ${memberImage}
+                                    ${memberName}
+                                    <p class="text-muted small">${member.role}</p>
+                                    <p class="small"><strong>Research:</strong> ${interests}</p>
+                                    <p class="small"><strong>Education:</strong> ${member.education}</p>
+                                    ${pastExperience}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // Populate all members
+                document.getElementById('all-members').innerHTML = allMembers.map(createMemberCard).join('');
+            })
+            .catch(error => {
+                console.error('Error loading members:', error);
+            });
+
+        // Load and display publications from JSON
+        fetch('publications.json')
+            .then(response => response.json())
+            .then(data => {
+                function createPublicationItem(publication) {
+                    const awardBadge = publication.awards && publication.awards.trim() !== '' 
+                        ? `<span class="badge badge-warning ml-2">${publication.awards}</span>` 
+                        : '';
+                    
+                    return `
+                        <div class="publication-item mb-4">
+                            <h6 class="font-weight-bold">${publication.title}${awardBadge}</h6>
+                            <p class="text-muted mb-1">${publication.venue}, ${publication.year}</p>
+                            <p class="small">Authors: ${publication.authors}</p>
+                        </div>
+                    `;
+                }
+
+                // Show only top 5 latest publications (assuming they are already sorted by year)
+                const latestPublications = data.publications.slice(0, 5);
+                document.getElementById('publications-list').innerHTML = latestPublications.map(createPublicationItem).join('');
+            })
+            .catch(error => {
+                console.error('Error loading publications:', error);
+            });
+
+        // Load and display news from JSON
+        fetch('news.json')
+            .then(response => response.json())
+            .then(data => {
+                function createNewsItem(newsItem, index, array) {
+                    const borderClass = index < array.length - 1 ? 'border-bottom pb-3 mb-3' : '';
+                    return `
+                        <div class="news-item ${borderClass}">
+                            <span class="badge badge-${newsItem.badge_color}">${newsItem.date}</span>
+                            <h6 class="mt-2 font-weight-bold">${newsItem.title}</h6>
+                            <p class="small">${newsItem.description}</p>
+                        </div>
+                    `;
+                }
+
+                document.getElementById('news-list').innerHTML = data.news.map(createNewsItem).join('');
+            })
+            .catch(error => {
+                console.error('Error loading news:', error);
+            });
+
+        // Load and display alumni from JSON
+        fetch('alumni.json')
+            .then(response => response.json())
+            .then(data => {
+                function createAlumniItem(alumni) {
+                    const currentPosition = alumni.current_position ? ` (Currently: ${alumni.current_position})` : '';
+                    
+                    return `
+                        <li class="mb-1">
+                            <strong>${alumni.name}</strong> - ${alumni.former_role} (${alumni.duration})${currentPosition}
+                        </li>
+                    `;
+                }
+
+                // Populate alumni as simple bullet list
+                document.getElementById('alumni-members').innerHTML = `<ul class="text-left">${data.alumni.map(createAlumniItem).join('')}</ul>`;
+            })
+            .catch(error => {
+                console.error('Error loading alumni:', error);
+            });
+    </script>
+
+</body>
+</html>

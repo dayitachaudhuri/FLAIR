@@ -1,0 +1,221 @@
+{
+  "publications": [
+    {
+      "title": "All That Glitters is Not Novel: Plagiarism in AI Generated Research",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2025",
+      "authors": "Tarun Gupta, Danish Pruthi",
+      "awards": "Outstanding Paper Award (Top 1% of accepted papers)"
+    },
+    {
+      "title": "FairI Tales: Evaluation of Fairness in Indian Contexts with a Focus on Bias and Stereotypes",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2025",
+      "authors": "Janki Atul Nawale*, Mohammed Safi Ur Rahman Khan*, Janani D, Mansi Gupta, Danish Pruthi, Mitesh M Khapra",
+      "awards": ""
+    },
+    {
+      "title": "Silencing Empowerment, Allowing Bigotry: Auditing the Moderation of Hate Speech on Twitch",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2025",
+      "authors": "Prarabdh Shukla*, Wei Yin Chong*, Yash Patel*, Brennan Schaffner, Danish Pruthi, Arjun Bhagoji",
+      "awards": "Senior Area Chairs' Highlights (Top 3% of accepted papers)"
+    },
+    {
+      "title": "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+      "venue": "International Conference on Machine Learning (ICML)",
+      "year": "2025",
+      "authors": "Saksham Rastogi, Pratyush Maini, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Knowledge Graph Guided Evaluation of Abstention Techniques",
+      "venue": "NAACL (Annual Conference of the Americas Chapter of ACL)",
+      "year": "2025",
+      "authors": "Kinshuk Vasisht, Navreet Kaur, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Richer Output for Richer Countries: Uncovering Geographical Disparities in Generated Stories and Travel Recommendations",
+      "venue": "Findings of NAACL (Annual Conference of the Americas Chapter of ACL)",
+      "year": "2025",
+      "authors": "Kirti Bhagat, Kinshuk Vasisht, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Revisiting the Robustness of Watermarking to Paraphrasing Attacks",
+      "venue": "Empirical Methods in Natural Language Processing (EMNLP)",
+      "year": "2024",
+      "authors": "Saksham Rastogi, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Performance Trade-offs of a Family of Text Watermarks",
+      "venue": "Findings of EMNLP",
+      "year": "2024",
+      "authors": "Anirudh Ajith, Sameer Singh, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Evaluating Large Language Models for Health-related Queries with Presuppositions",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2024",
+      "authors": "Navreet Kaur, Monojit Choudhury, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "What Can Natural Language Processing Do for Peer Review?",
+      "venue": "Technical Report (Dagstuhl Seminar 24052)",
+      "year": "",
+      "authors": "Ilia Kuznetsov, Osama Mohammed Afzal, Koen Dercksen, Nils Dycke, Alexander Goldberg, Tom Hope, Dirk Hovy, Jonathan K. Kummerfeld, Anne Lauscher, Kevin Leyton-Brown, Sheng Lu, Mausam, Margot Mieskes, Aurélie Névéol, Danish Pruthi, Lizhen Qu, Roy Schwartz, Noah A. Smith, Thamar Solorio, Iryna Gurevych, Jingyan Wang, Xiaodan Zhu, Anna Rogers, Nihar B. Shah, Iryna Gurevych",
+      "awards": ""
+    },
+    {
+      "title": "Goodhart's Law Applies to NLP's Explanation Benchmarks",
+      "venue": "Findings of EACL",
+      "year": "2023",
+      "authors": "Jennifer Hsia, Danish Pruthi, Aarti Singh, Zachary C. Lipton",
+      "awards": ""
+    },
+    {
+      "title": "Model-tuning Via Prompts Makes NLP Models Adversarially Robust",
+      "venue": "Empirical Methods in Natural Language Processing (EMNLP)",
+      "year": "2023",
+      "authors": "Mrigank Raman, Pratyush Maini, Zico Kolter, Zachary C. Lipton, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Geographical Erasure in Language Generation",
+      "venue": "Findings of EMNLP",
+      "year": "2023",
+      "authors": "Pola Schwöbel, Jacek Golebiowski, Michele Donini, Cedric Archambeau, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Inspecting Geographical Representativeness of Images from Text-to-Image Models",
+      "venue": "International Conference on Computer Vision (ICCV)",
+      "year": "2023",
+      "authors": "Abhipsa Basu, R. Venkatesh Babu, Danish Pruthi",
+      "awards": ""
+    },
+    {
+      "title": "Assisting Human Decisions in Document Matching",
+      "venue": "Transactions on Machine Learning Research (TMLR)",
+      "year": "2023",
+      "authors": "Joon Sik Kim, Valerie Chen, Danish Pruthi, Nihar B. Shah, Ameet Talwalkar",
+      "awards": ""
+    },
+    {
+      "title": "Learning the Legibility of Visual Text Perturbations",
+      "venue": "Findings of EACL",
+      "year": "2023",
+      "authors": "Dev Seth, Rickard Stureborg, Danish Pruthi, Bhuwan Dhingra",
+      "awards": ""
+    },
+    {
+      "title": "Learning to Scaffold: Optimizing Model Explanations for Teaching",
+      "venue": "NeurIPS",
+      "year": "2022",
+      "authors": "Patrick Fernandes*, Marcos Treviso*, Danish Pruthi, André F. T. Martins, Graham Neubig",
+      "awards": ""
+    },
+    {
+      "title": "Measures of Information Reflect Memorization Patterns",
+      "venue": "NeurIPS",
+      "year": "2022",
+      "authors": "Rachit Bansal, Danish Pruthi, Yonatan Belinkov",
+      "awards": ""
+    },
+    {
+      "title": "Explain, Edit, and Understand: Rethinking User Study Design for Evaluating Model Explanations",
+      "venue": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "year": "2022",
+      "authors": "Siddhant Arora*, Danish Pruthi*, Norman Sadeh, William W. Cohen, Zachary C. Lipton, Graham Neubig",
+      "awards": ""
+    },
+    {
+      "title": "Evaluating Explanations: How much do explanations from the teacher aid students?",
+      "venue": "Transactions of the Association for Computational Linguistics (TACL)",
+      "year": "2021",
+      "authors": "Danish Pruthi, Rachit Bansal, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen",
+      "awards": ""
+    },
+    {
+      "title": "Do Context-Aware Translation Models Pay the Right Attention?",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2021",
+      "authors": "Kayo Yin, Patrick Fernandes, Danish Pruthi, Aditi Chaudhary, André F. T. Martins, Graham Neubig",
+      "awards": ""
+    },
+    {
+      "title": "Weakly- and Semi-supervised Evidence Extraction",
+      "venue": "Findings of EMNLP",
+      "year": "2020",
+      "authors": "Danish Pruthi, Bhuwan Dhingra, Graham Neubig, Zachary Lipton",
+      "awards": ""
+    },
+    {
+      "title": "NeuSpell: A Neural Spelling Correction Toolkit",
+      "venue": "Empirical Methods in Natural Language Processing (EMNLP) – Demo Track",
+      "year": "2020",
+      "authors": "Sai Muralidhar Jayanthi, Danish Pruthi, Graham Neubig",
+      "awards": ""
+    },
+    {
+      "title": "Why and when should you pool? Analyzing Pooling in Recurrent Architectures",
+      "venue": "Findings of EMNLP",
+      "year": "2020",
+      "authors": "Pratyush Maini, Keshav Kolluru, Danish Pruthi, Mausam",
+      "awards": ""
+    },
+    {
+      "title": "Learning to Deceive with Attention-Based Explanations",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2020",
+      "authors": "Danish Pruthi, Mansi Gupta, Bhuwan Dhingra, Graham Neubig, Zachary Lipton",
+      "awards": ""
+    },
+    {
+      "title": "Combating Adversarial Misspellings with Robust Word Recognition",
+      "venue": "Association for Computational Linguistics (ACL)",
+      "year": "2019",
+      "authors": "Danish Pruthi, Bhuwan Dhingra, Zachary Lipton",
+      "awards": ""
+    },
+    {
+      "title": "compare-mt: A Tool for Holistic Comparison of Language Generation Systems",
+      "venue": "NAACL (Demo Track)",
+      "year": "2019",
+      "authors": "Graham Neubig, Zi-Yi Dou, Junjie Hu, Paul Michel, Danish Pruthi, Xinyi Wang, John Wieting",
+      "awards": "Best Demo Runner-up"
+    },
+    {
+      "title": "Simple and Effective Semi-Supervised Question Answering",
+      "venue": "NAACL (Short Paper)",
+      "year": "2018",
+      "authors": "Bhuwan Dhingra*, Danish Pruthi*, Dheeraj Rajagopal*",
+      "awards": ""
+    },
+    {
+      "title": "SPINE: SParse Interpretable Neural Embeddings",
+      "venue": "AAAI (2018)",
+      "year": "2018",
+      "authors": "Anant Subramanian*, Danish Pruthi*, Harsh Jhamtani*, Taylor Berg-Kirkpatrick, Eduard Hovy",
+      "awards": ""
+    },
+    {
+      "title": "Discovering Response Eliciting Factors in Social Question Answering: A Reddit Inspired Study",
+      "venue": "AAAI Conference on Web and Social Media (ICWSM)",
+      "year": "2016",
+      "authors": "Danish, Yogesh Dahiya, Partha Talukdar",
+      "awards": ""
+    },
+    {
+      "title": "Maxxyt: An Autonomous Wearable Device for Real-time Tracking of a Wide Range of Exercises",
+      "venue": "International Conference on Modelling and Simulation (UKSim)",
+      "year": "2015",
+      "authors": "Danish Pruthi, Ayush Jain, KrishnaMurthy Jatavallabhula, Ruppesh Nalwaya, Puneet Teja",
+      "awards": ""
+    }
+  ]
+}

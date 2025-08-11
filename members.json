@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "name": "Kinshuk Vasisht",
+      "role": "PhD Student",
+      "interests": ["Abstention Techniques for LLMs"],
+      "education": "Bachelors + Masters in CS from Univ. of Delhi",
+      "past": null,
+      "image_filename": "kinshuk-vasisht.jpg",
+      "website": ""
+    },
+    {
+      "name": "Kirti Bhagat",
+      "role": "Research Associate",
+      "interests": ["Geo-Culturally Inclusive AI"],
+      "education": "B.Tech ECE, VIT",
+      "past": "Software Engineer at Amazon",
+      "image_filename": "kirti-bhagat.jpg",
+      "website": ""
+    },
+    {
+      "name": "Tarun Gupta",
+      "role": "Research Associate",
+      "interests": ["Natural Language Processing"],
+      "education": "B.Tech CS, IIT Indore (2018-2022)",
+      "past": "Senior Member of Technical Staff at D. E. Shaw & Co.",
+      "image_filename": "tarun-gupta.jpg",
+      "website": ""
+    },
+    {
+      "name": "Miroojin Bakshi",
+      "role": "PhD Student",
+      "interests": ["Interpretability"],
+      "education": "B.Tech CS, IIT Indore",
+      "past": "Principle Software Engineer at Leapfin",
+      "image_filename": "miroojin-bakshi.jpg",
+      "website": ""
+    },
+    {
+      "name": "Dayita Chaudhuri",
+      "role": "M Tech (coursework)",
+      "interests": ["Natural Language Processing"],
+      "education": "BTech CSE, NIT Agartala (2020-24)",
+      "past": null,
+      "image_filename": "dayita-chaudhuri.jpg",
+      "website": ""
+    },
+    {
+      "name": "Velagapudi Athul",
+      "role": "M Tech (coursework)",
+      "interests": ["Natural Language Processing"],
+      "education": "B Tech CSE, JNTUHCEH",
+      "past": null,
+      "image_filename": "velagapudi-athul.jpg",
+      "website": ""
+    },
+    {
+      "name": "Anirudh Phukan",
+      "role": "PhD Student",
+      "interests": ["Natural Language Processing"],
+      "education": "B.Tech CS, IIT Guwahati (2019-2023)",
+      "past": "Research Associate II at Adobe Research",
+      "image_filename": "anirudh-phukan.jpg",
+      "website": ""
+    }
+  ]
+}
