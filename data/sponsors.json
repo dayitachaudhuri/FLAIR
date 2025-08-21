@@ -1,0 +1,34 @@
+{
+    "sponsors":[
+        {
+            "name": "Schmidt Sciences",
+            "logo": "assets/imgs/sponsors/schmidt.jpg",
+            "url": "https://www.iisc.ac.in"
+        },
+        {
+            "name": "Adobe Inc",
+            "logo": "assets/imgs/sponsors/adobe.png",
+            "url": "https://www.adobe.com"
+        },
+        {
+            "name": "Google Research",
+            "logo": "assets/imgs/sponsors/google.jpg",
+            "url": "https://www.google.com"
+        },
+        {
+            "name": "Microsoft Research",
+            "logo": "assets/imgs/sponsors/microsoft.svg",
+            "url": "https://www.microsoft.com"
+        },
+        {
+            "name": "NPCI",
+            "logo": "assets/imgs/sponsors/npci.avif",
+            "url": "https://www.npci.org.in"
+        },
+        {
+            "name": "Pratiksha Trust",
+            "logo": "assets/imgs/sponsors/pratiksha.png",
+            "url": "https://www.pratiksha.org"
+        }
+    ]
+}
