@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://flair-iisc.github.io/blog">Blog ↗</a>
+                        <a class="nav-link" href="https://dayitachaudhuri.github.io/jekyll-blog/">Blog ↗</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -64,16 +64,22 @@
                 <div class="col-12 text-center justify-content-center align-items-center">
                     <div class="slider-container">
                         <div class="slide active">
-                            <img src="assets/imgs/slider/slide1.jpeg" alt="Research Image 1">
+                            <img src="assets/imgs/slider/gallery-1.jpeg" alt="Research Image 1">
                         </div>
                         <div class="slide">
-                            <img src="assets/imgs/slider/slide2.jpeg" alt="Research Image 2">
+                            <img src="assets/imgs/slider/gallery-2.jpeg" alt="Research Image 2">
                         </div>
                         <div class="slide">
-                            <img src="assets/imgs/slider/slide3.jpeg" alt="Research Image 3">
+                            <img src="assets/imgs/slider/gallery-3.jpeg" alt="Research Image 3">
                         </div>
                         <div class="slide">
-                            <img src="assets/imgs/slider/slide4.jpeg" alt="Research Image 4">
+                            <img src="assets/imgs/slider/gallery-4.jpeg" alt="Research Image 4">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/imgs/slider/gallery-5.jpeg" alt="Research Image 5">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/imgs/slider/gallery-6.jpeg" alt="Research Image 6">
                         </div>
                         <button class="slider-arrow prev" onclick="changeSlide(-1)">
                         <i class="ti-angle-left">←</i>
@@ -212,12 +218,12 @@
                         <div class="col-md-4">
                             <div class="card border">
                                 <div class="card-body text-center">
-                                    <img src="assets/imgs/danish-pruthi.jpg" alt="Dr. Danish Pruthi"
+                                    <img src="assets/imgs/team/danish.jpg" alt="Dr. Danish Pruthi"
                                         class="rounded-circle mb-3"
                                         style="width: 150px; height: 150px; object-fit: cover;">
                                     <h5 class="font-weight-bold">Dr. Danish Pruthi</h5>
                                     <p class="text-muted">Assistant Professor</p>
-                                    <p class="small">Department of Computer Science and Automation, IISc</p>
+                                    <p class="small">Department of Computational and Data Sciences, IISc</p>
                                     <div class="socials">
                                         <a href="https://danishpruthi.com" class="text-primary"><i
                                                 class="ti-world"></i></a>
@@ -371,290 +377,17 @@
     <script src="assets/js/steller.js"></script>
 
     <!-- Image slider script -->
-    <script>
-        let slideIndex = 1;
-        let slideInterval;
-
-        function showSlide(n) {
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].classList.remove("active");
-            }
-
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].classList.remove("active");
-            }
-
-            slides[slideIndex - 1].classList.add("active");
-            dots[slideIndex - 1].classList.add("active");
-        }
-
-        function changeSlide(n) {
-            clearInterval(slideInterval);
-            slideIndex += n;
-            showSlide(slideIndex);
-            startAutoSlide();
-        }
-
-        function currentSlide(n) {
-            clearInterval(slideInterval);
-            slideIndex = n;
-            showSlide(slideIndex);
-            startAutoSlide();
-        }
-
-        function nextSlide() {
-            slideIndex++;
-            showSlide(slideIndex);
-        }
-
-        function startAutoSlide() {
-            slideInterval = setInterval(nextSlide, 4000);
-        }
-
-        // Initialize slider
-        document.addEventListener('DOMContentLoaded', function () {
-            showSlide(slideIndex);
-            startAutoSlide();
-        });
-    </script>
-
-    <!-- Load team members -->
-    <script>
-        // Load and display team members from JSON
-        fetch('data/members.json')
-            .then(response => response.json())
-            .then(data => {
-                let allMembers = data.students;
-
-                // Shuffle array
-                function shuffle(array) {
-                    for (let i = array.length - 1; i > 0; i--) {
-                        const j = Math.floor(Math.random() * (i + 1));
-                        [array[i], array[j]] = [array[j], array[i]];
-                    }
-                    return array;
-                }
-
-                allMembers = shuffle(allMembers);
-
-                function createMemberCard(member) {
-                    const pastExperience = member.past ? `<p class="small text-muted">Previously: ${member.past}</p>` : '';
-                    const interests = member.interests.join(', ');
-
-                    // Use member image if available, otherwise show placeholder
-                    const memberImage = member.image_filename
-                        ? `<img src="assets/imgs/members/${member.image_filename}" alt="${member.name}" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">`
-                        : `<div class="rounded-circle bg-light mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
-                               <i class="ti-user display-4 text-muted"></i>
-                           </div>`;
-
-                    // Make name clickable if website is available
-                    const memberName = member.website && member.website.trim() !== ''
-                        ? `<a href="${member.website}" target="_blank" class="text-decoration-none"><h6 class="font-weight-bold">${member.name}</h6></a>`
-                        : `<h6 class="font-weight-bold">${member.name}</h6>`;
-
-                    return `
-                        <div class="col-md-4 mb-4">
-                            <div class="card border h-100">
-                                <div class="card-body text-center">
-                                    ${memberImage}
-                                    ${memberName}
-                                    <p class="text-muted small">${member.role}</p>
-                                    <p class="small"><strong>Research:</strong> ${interests}</p>
-                                    <p class="small"><strong>Education:</strong> ${member.education}</p>
-                                    ${pastExperience}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-
-                // Populate all members
-                document.getElementById('all-members').innerHTML = allMembers.map(createMemberCard).join('');
-            })
-            .catch(error => {
-                console.error('Error loading members:', error);
-            });
-
-        // Load and display publications from JSON
-        fetch('data/publications.json')
-            .then(response => response.json())
-            .then(data => {
-                function createPublicationItem(publication) {
-                    const awardBadge = publication.awards && publication.awards.trim() !== ''
-                        ? `<span class="badge badge-warning ml-2">${publication.awards}</span>`
-                        : '';
-
-                    return `
-                        <div class="publication-item mb-4">
-                            <h6 class="font-weight-bold">${publication.title}${awardBadge}</h6>
-                            <p class="text-muted mb-1">${publication.venue}, ${publication.year}</p>
-                            <p class="small">Authors: ${publication.authors}</p>
-                        </div>
-                    `;
-                }
-
-                const latestPublications = data.publications.slice(0, 5);
-                document.getElementById('publications-list').innerHTML = latestPublications.map(createPublicationItem).join('');
-            })
-            .catch(error => {
-                console.error('Error loading publications:', error);
-            });
-
-        // Load and display news from JSON
-        fetch('data/news.json')
-            .then(response => response.json())
-            .then(data => {
-                function linkify(text) {
-                    // Replace URLs with clickable links
-                    return text.replace(/(https?:\/\/[^\s]+)/g, function(url) {
-                        return `<a href="${url}" target="_blank" rel="noopener">${url}</a>`;
-                    });
-                }
-                function createNewsItem(newsItem, index, array) {
-                    const borderClass = index < array.length - 1 ? 'border-bottom pb-3 mb-3' : '';
-                    return `
-                        <div class="news-item ${borderClass}">
-                            <span class="badge badge-${newsItem.badge_color || 'info'}">${newsItem.date}</span>
-                            <h6 class="mt-2 font-weight-bold">${newsItem.title}</h6>
-                            <p class="small">${linkify(newsItem.description)}</p>
-                        </div>
-                    `;
-                }
-                document.getElementById('news-list').innerHTML = data.news.map(createNewsItem).join('');
-            })
-            .catch(error => {
-                console.error('Error loading news:', error);
-            });
-
-        // Load and display alumni from JSON
-        fetch('data/alumni.json')
-            .then(response => response.json())
-            .then(data => {
-                // Group alumni by former_role keywords
-                const categories = {
-                    Interns: [],
-                    "Project Associates": [],
-                    "MTech Students": [],
-                    "PhD Students": []
-                };
-
-                data.alumni.forEach(alumni => {
-                    const role = alumni.former_role.toLowerCase();
-                    if (role.includes('intern')) {
-                        categories['Interns'].push(alumni);
-                    } else if (role.includes('project associate')) {
-                        categories['Project Associates'].push(alumni);
-                    } else if (role.includes('m tech')) {
-                        categories['MTech Students'].push(alumni);
-                    } else if (role.includes('phd')) {
-                        categories['PhD Students'].push(alumni);
-                    }
-                });
-
-                function createAlumniItem(alumni) {
-                    const currentPosition = alumni.current_position ? ` (Currently: ${alumni.current_position})` : '';
-                    return `
-                        <li class="mb-1">
-                            <strong>${alumni.name}</strong> - ${alumni.former_role} (${alumni.duration})${currentPosition}
-                        </li>
-                    `;
-                }
-
-                function createDropdown(category, alumniList, idx) {
-                    if (alumniList.length === 0) return '';
-                    return `
-                        <div class="card mb-2">
-                            <div class="card-header p-0" id="heading${idx}">
-                                <h6 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse${idx}" aria-expanded="false" aria-controls="collapse${idx}">
-                                        ${category}
-                                    </button>
-                                </h6>
-                            </div>
-                            <div id="collapse${idx}" class="collapse" aria-labelledby="heading${idx}" data-parent="#alumni-dropdowns">
-                                <div class="card-body p-2">
-                                    <ul class="text-left mb-0">
-                                        ${alumniList.map(createAlumniItem).join('')}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-
-                const dropdownHtml = [
-                    createDropdown('Interns', categories['Interns'], 1),
-                    createDropdown('Project Associates', categories['Project Associates'], 2),
-                    createDropdown('MTech Students', categories['MTech Students'], 3),
-                    createDropdown('PhD Students', categories['PhD Students'], 4)
-                ].filter(Boolean).join('');
-
-                document.getElementById('alumni-dropdowns').innerHTML = dropdownHtml;
-            })
-            .catch(error => {
-                console.error('Error loading alumni:', error);
-            });
-
-        // Sponsors slider logic (show 4 cards per slide)
-        let sponsorSlideIndex = 0;
-        let sponsorInterval;
-        let sponsorsData = [];
-        const SPONSORS_PER_SLIDE = 4;
-
-        function showSponsorSlide(n) {
-            const wrapper = document.querySelector('.sponsors-slides-wrapper');
-            if (!wrapper || sponsorsData.length === 0) return;
-            const total = sponsorsData.length;
-            // Circular logic: wrap index
-            let start = ((n % total) + total) % total;
-            sponsorSlideIndex = start;
-            let cards = [];
-            for (let i = 0; i < SPONSORS_PER_SLIDE; i++) {
-                const idx = (start + i) % total;
-                cards.push(sponsorsData[idx]);
-            }
-            wrapper.innerHTML = `<div class="sponsors-row d-flex justify-content-center flex-wrap">${cards.map(sponsor => `
-            <div class="sponsor-card mx-auto text-center">
-                <a href="${sponsor.url}" target="_blank" rel="noopener">
-                    <img src="${sponsor.logo}" alt="${sponsor.name}" class="sponsor-logo mb-2">
-                    <div class="font-weight-bold">${sponsor.name}</div>
-                </a>
-            </div>
-        `).join('')}</div>`;
-        }
-
-        function changeSponsorSlide(n) {
-            clearInterval(sponsorInterval);
-            showSponsorSlide(sponsorSlideIndex + n);
-            startSponsorAutoSlide();
-        }
-
-        function startSponsorAutoSlide() {
-            sponsorInterval = setInterval(() => {
-                showSponsorSlide(sponsorSlideIndex + 1);
-            }, 3500);
-        }
-
-        fetch('data/sponsors.json')
-            .then(response => response.json())
-            .then(data => {
-                sponsorsData = data.sponsors;
-                sponsorSlideIndex = 0;
-                showSponsorSlide(sponsorSlideIndex);
-                startSponsorAutoSlide();
-            })
-            .catch(error => {
-                console.error('Error loading sponsors:', error);
-            });
-    </script>
+    <script src="assets/js/slider.js"></script>
+    <!-- Modular JS for team members -->
+    <script src="assets/js/members.js"></script>
+    <!-- Modular JS for publications -->
+    <script src="assets/js/publications.js"></script>
+    <!-- Modular JS for news -->
+    <script src="assets/js/news.js"></script>
+    <!-- Modular JS for alumni -->
+    <script src="assets/js/alumni.js"></script>
+    <!-- Modular JS for sponsors slider -->
+    <script src="assets/js/sponsors.js"></script>
 
 </body>
-
 </html>

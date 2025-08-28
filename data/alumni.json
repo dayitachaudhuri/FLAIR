@@ -1,52 +1,103 @@
 {
   "alumni": [
     {
-      "name": "Saket Sharma",
-      "former_role": "M Tech (Research)",
-      "duration": "2022-2024",
-      "interests": ["NLP", "Machine Learning", "Text Generation"],
-      "current_position": "Software Engineer at Meta",
-      "image_filename": ""
+      "name": "Saksham Rastogi",
+      "former_role": "Research Assistant",
+      "duration": "",
+      "interests": [],
+      "current_position": "Microsoft Research",
+      "image_filename": "",
+      "website": "https://scholar.google.com/citations?user=Ty2EujYAAAAJ&hl=en"
     },
     {
-      "name": "Priya Krishnan",
-      "former_role": "Research Intern",
-      "duration": "Summer 2023",
-      "interests": ["Fairness in AI", "Bias Detection"],
-      "current_position": "PhD Student at Stanford University",
-      "image_filename": ""
+      "name": "Prarabdh Shukla",
+      "former_role": "Research Assistant",
+      "duration": "",
+      "interests": [],
+      "current_position": "RA at IIT Bombay",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/prarabdh-shukla-a51a741bb/?originalSubdomain=in"
     },
     {
-      "name": "Arjun Mehta",
-      "former_role": "M Tech (Coursework)",
-      "duration": "2021-2023",
-      "interests": ["Adversarial Robustness", "Computer Vision"],
-      "current_position": "Research Scientist at Microsoft Research",
-      "image_filename": ""
+      "name": "Yash Patel",
+      "former_role": "M Tech (coursework)",
+      "duration": "",
+      "interests": [],
+      "current_position": "ML Scientist at Nykaa",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/yashpatel7108/?originalSubdomain=in"
     },
     {
-      "name": "Ananya Gupta",
-      "former_role": "Project Associate",
-      "duration": "2020-2022",
-      "interests": ["Natural Language Processing", "Interpretability"],
-      "current_position": "ML Engineer at Google",
-      "image_filename": ""
+      "name": "Naveeja Sajeevan",
+      "former_role": "M Tech (coursework)",
+      "duration": "",
+      "interests": [],
+      "current_position": "Data Scientist at Mango Sciences",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/naveeja-sajeevan-34a36b1bb/"
     },
     {
-      "name": "Rahul Singh",
-      "former_role": "Visiting Student",
-      "duration": "2022",
-      "interests": ["Deep Learning", "Neural Networks"],
-      "current_position": "PhD Student at CMU",
-      "image_filename": ""
+      "name": "Sofia Sunam",
+      "former_role": "M Tech (coursework)",
+      "duration": "",
+      "interests": [],
+      "current_position": "",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/sofia-sunam-5567ab172/?originalSubdomain=in"
     },
     {
-      "name": "Kavya Patel",
-      "former_role": "Research Intern",
-      "duration": "Summer 2022",
-      "interests": ["AI Safety", "Model Robustness"],
-      "current_position": "Software Engineer at Adobe",
-      "image_filename": ""
+      "name": "Navreet Kaur",
+      "former_role": "Research Assistant",
+      "duration": "",
+      "interests": [],
+      "current_position": "PhD at University of Washington",
+      "image_filename": "",
+      "website": "https://navreeetkaur.github.io/"
+    },
+    {
+      "name": "Anirudh Ajith",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "Allen Institute for AI, Seattle",
+      "image_filename": "",
+      "website": "https://anirudhajith.github.io/"
+    },
+    {
+      "name": "Shashwat Singh",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "CS Undergrad at IIIT H → PhD at NYU",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/shashwat-singh-bb6872111/"
+    },
+    {
+      "name": "Nikita Menon",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "MS at University of Edinburgh",
+      "image_filename": "",
+      "website": "https://nikxtaco.netlify.app/"
+    },
+    {
+      "name": "Krithika Ramesh",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "PhD at Johns Hopkins University",
+      "image_filename": "",
+      "website": "https://kr-ramesh.github.io/"
+    },
+    {
+      "name": "Sharvanee Sonawane",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "CS Undergrad at IIT Bombay",
+      "image_filename": "",
+      "website": ""
     }
   ]
 }
