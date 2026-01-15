@@ -1,0 +1,103 @@
+{
+  "alumni": [
+    {
+      "name": "Saksham Rastogi",
+      "former_role": "Research Assistant",
+      "duration": "",
+      "interests": [],
+      "current_position": "Microsoft Research",
+      "image_filename": "",
+      "website": "https://scholar.google.com/citations?user=Ty2EujYAAAAJ&hl=en"
+    },
+    {
+      "name": "Prarabdh Shukla",
+      "former_role": "Research Assistant",
+      "duration": "",
+      "interests": [],
+      "current_position": "RA at IIT Bombay",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/prarabdh-shukla-a51a741bb/?originalSubdomain=in"
+    },
+    {
+      "name": "Yash Patel",
+      "former_role": "M Tech (coursework)",
+      "duration": "",
+      "interests": [],
+      "current_position": "ML Scientist at Nykaa",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/yashpatel7108/?originalSubdomain=in"
+    },
+    {
+      "name": "Naveeja Sajeevan",
+      "former_role": "M Tech (coursework)",
+      "duration": "",
+      "interests": [],
+      "current_position": "Data Scientist at Mango Sciences",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/naveeja-sajeevan-34a36b1bb/"
+    },
+    {
+      "name": "Sofia Sunam",
+      "former_role": "M Tech (coursework)",
+      "duration": "",
+      "interests": [],
+      "current_position": "",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/sofia-sunam-5567ab172/?originalSubdomain=in"
+    },
+    {
+      "name": "Navreet Kaur",
+      "former_role": "Research Assistant",
+      "duration": "",
+      "interests": [],
+      "current_position": "PhD at University of Washington",
+      "image_filename": "",
+      "website": "https://navreeetkaur.github.io/"
+    },
+    {
+      "name": "Anirudh Ajith",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "Allen Institute for AI, Seattle",
+      "image_filename": "",
+      "website": "https://anirudhajith.github.io/"
+    },
+    {
+      "name": "Shashwat Singh",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "CS Undergrad at IIIT H → PhD at NYU",
+      "image_filename": "",
+      "website": "https://www.linkedin.com/in/shashwat-singh-bb6872111/"
+    },
+    {
+      "name": "Nikita Menon",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "MS at University of Edinburgh",
+      "image_filename": "",
+      "website": "https://nikxtaco.netlify.app/"
+    },
+    {
+      "name": "Krithika Ramesh",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "PhD at Johns Hopkins University",
+      "image_filename": "",
+      "website": "https://kr-ramesh.github.io/"
+    },
+    {
+      "name": "Sharvanee Sonawane",
+      "former_role": "Intern",
+      "duration": "",
+      "interests": [],
+      "current_position": "CS Undergrad at IIT Bombay",
+      "image_filename": "",
+      "website": ""
+    }
+  ]
+}

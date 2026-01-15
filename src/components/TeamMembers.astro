@@ -1,0 +1,79 @@
+---
+interface Member {
+  name: string;
+  role: string;
+  interests: string[];
+  education: string;
+  past: string | null;
+  image_filename: string;
+  website: string;
+}
+
+interface Props {
+  members: Member[];
+}
+
+const { members } = Astro.props;
+---
+
+<div
+  id="all-members"
+  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+>
+</div>
+
+<script define:vars={{ members }}>
+  // Fisher-Yates shuffle algorithm
+  function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }
+
+  // Render members
+  function renderMembers() {
+    const container = document.getElementById("all-members");
+    if (!container) return;
+
+    const shuffledMembers = shuffleArray(members);
+
+    container.innerHTML = shuffledMembers
+      .map(
+        (member) => `
+      <div class="flex justify-center">
+        <div class="bg-white border border-gray-300 rounded-lg shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 w-full">
+          <div class="p-6 text-center">
+            <img 
+              src="/assets/imgs/team/${member.image_filename}" 
+              alt="${member.name}"
+              class="w-[150px] h-[150px] object-cover rounded-full mx-auto mb-4"
+            >
+            <a href="${member.website}" target="_blank" rel="noopener" class="text-gray-800 hover:text-blue-600 transition-colors">
+              <h5 class="text-lg font-semibold mb-1">${member.name}</h5>
+            </a>
+            <p class="text-gray-600 text-sm mb-2">${member.role}</p>
+            <p class="text-sm text-gray-700 mb-2">
+              <strong>Research Interests:</strong> ${member.interests.join(", ")}
+            </p>
+            <p class="text-sm text-gray-700 mb-2">
+              <strong>Education:</strong> ${member.education}
+            </p>
+            ${member.past ? `<p class="text-sm text-gray-700 mb-3"><strong>Past:</strong> ${member.past}</p>` : ""}
+          </div>
+        </div>
+      </div>
+    `,
+      )
+      .join("");
+  }
+
+  // Run on page load
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMembers);
+  } else {
+    renderMembers();
+  }
+</script>

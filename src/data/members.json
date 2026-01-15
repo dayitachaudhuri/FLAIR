@@ -1,0 +1,94 @@
+{
+  "students": [
+    {
+      "name": "Kinshuk Vasisht",
+      "role": "PhD Student",
+      "interests": ["Abstention Techniques for LLMs"],
+      "education": "Bachelors + Masters in CS from Univ. of Delhi",
+      "past": null,
+      "image_filename": "kinshuk.jpg",
+      "website": "https://www.linkedin.com/in/kinshuk-vasisht-a35084153"
+    },
+    {
+      "name": "Kirti Bhagat",
+      "role": "Research Associate",
+      "interests": ["Geo-Culturally Inclusive AI"],
+      "education": "B.Tech ECE, VIT",
+      "past": "Software Engineer at Amazon",
+      "image_filename": "kirti.png",
+      "website": "https://www.linkedin.com/in/kirti-bhagat-158a3a150/"
+    },
+    {
+      "name": "Tarun Gupta",
+      "role": "Research Associate",
+      "interests": ["Natural Language Processing"],
+      "education": "B.Tech CS, IIT Indore (2018-2022)",
+      "past": "Senior Member of Technical Staff at D. E. Shaw & Co.",
+      "image_filename": "tarun.png",
+      "website": "https://www.linkedin.com/in/tarun-gupta-116860178/"
+    },
+    {
+      "name": "Miroojin Bakshi",
+      "role": "PhD Student",
+      "interests": ["Interpretability"],
+      "education": "B.Tech CS, IIT Indore",
+      "past": "Principle Software Engineer at Leapfin",
+      "image_filename": "miroojin.png",
+      "website": "https://www.linkedin.com/in/miroojin-bakshi-70166610a/"
+    },
+    {
+      "name": "Dayita Chaudhuri",
+      "role": "M Tech (coursework)",
+      "interests": ["Natural Language Processing"],
+      "education": "BTech CSE, NIT Agartala (2020-24)",
+      "past": null,
+      "image_filename": "dayita.png",
+      "website": "https://www.linkedin.com/in/dayita-chaudhuri/"
+    },
+    {
+      "name": "Velagapudi Athul",
+      "role": "M Tech (coursework)",
+      "interests": ["Natural Language Processing"],
+      "education": "B Tech CSE, JNTUHCEH",
+      "past": null,
+      "image_filename": "saksham.png",
+      "website": "https://www.linkedin.com/in/athul-velagapudi-406b69187/"
+    },
+    {
+      "name": "Anirudh Phukan",
+      "role": "PhD Student",
+      "interests": ["Natural Language Processing"],
+      "education": "B.Tech CS, IIT Guwahati (2019-2023)",
+      "past": "Research Associate II at Adobe Research",
+      "image_filename": "anirudh.png",
+      "website": "https://anirudh-phukan.github.io/"
+    },
+    {
+      "name": "Arati Mahapatra",
+      "role": "MTech (Research)",
+      "interests": ["Human-AI Collaboration"],
+      "education": "B.Tech CSE, NIT Trichy (2021-2025)",
+      "past": null,
+      "image_filename": "arti.jpg",
+      "website": "https://www.linkedin.com/in/arati-mohapatra/"
+    },
+    {
+      "name": "Rounak",
+      "role": "MTech (Research)",
+      "interests": ["Human-AI Collaboration"],
+      "education": "B.Tech CSE, NIT Trichy (2021-2025)",
+      "past": null,
+      "image_filename": "saksham.png",
+      "website": "https://www.linkedin.com/in/rounak/"
+    },
+    {
+      "name": "Rose",
+      "role": "MTech (Research)",
+      "interests": ["Human-AI Collaboration"],
+      "education": "B.Tech CSE, NIT Trichy (2021-2025)",
+      "past": null,
+      "image_filename": "saksham.png",
+      "website": "https://www.linkedin.com/in/rose/"
+    }
+  ]
+}

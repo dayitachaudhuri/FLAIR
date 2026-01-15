@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Get all markdown files from the blog directory
+const posts = await Astro.glob("../pages/blog/*.md");
+
+// Sort by date (newest first)
+const sortedPosts = posts.sort((a, b) => {
+    const dateA = new Date(a.frontmatter.date || 0).getTime();
+    const dateB = new Date(b.frontmatter.date || 0).getTime();
+    return dateB - dateA;
+});
+---
+
+<Layout title="Blog - FLAIR Lab">
+    <Header />
+
+    <div class="min-h-screen bg-white pt-24 pb-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <header class="mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Blog
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Thoughts, research updates, and insights from the FLAIR Lab
+                </p>
+            </header>
+
+            <div class="space-y-8">
+                {
+                    sortedPosts.map((post) => (
+                        <article class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                            <a href={post.url} class="group">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    {post.frontmatter.title}
+                                </h2>
+                                {post.frontmatter.description && (
+                                    <p class="text-gray-600 mb-4 leading-relaxed">
+                                        {post.frontmatter.description}
+                                    </p>
+                                )}
+                                <div class="flex items-center gap-4 text-sm text-gray-500">
+                                    {post.frontmatter.author && (
+                                        <span class="font-medium">
+                                            {post.frontmatter.author}
+                                        </span>
+                                    )}
+                                    {post.frontmatter.date && (
+                                        <time datetime={post.frontmatter.date}>
+                                            {new Date(
+                                                post.frontmatter.date,
+                                            ).toLocaleDateString("en-US", {
+                                                year: "numeric",
+                                                month: "long",
+                                                day: "numeric",
+                                            })}
+                                        </time>
+                                    )}
+                                </div>
+                            </a>
+                        </article>
+                    ))
+                }
+            </div>
+
+            {
+                sortedPosts.length === 0 && (
+                    <div class="text-center py-12">
+                        <p class="text-gray-500 text-lg">
+                            No blog posts yet. Check back soon!
+                        </p>
+                    </div>
+                )
+            }
+        </div>
+    </div>
+
+    <Footer />
+</Layout>
