@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             allMembers = shuffle(allMembers);
 
             function createMemberCard(member) {
-                const pastExperience = member.past ? `<p class="small text-muted">Previously: ${member.past}</p>` : '';
+                const pastExperience = member.past ? `<p>Previously: ${member.past}</p>` : '';
                 const interests = member.interests.join(', ');
                 const memberImage = member.image_filename
                     ? `<img src="assets/imgs/team/${member.image_filename}" alt="${member.name}" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">`
@@ -21,17 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
                            <i class="ti-user display-4 text-muted"></i>
                        </div>`;
                 const memberName = member.website && member.website.trim() !== ''
-                    ? `<a href="${member.website}" target="_blank" class="text-decoration-none"><h6 class="font-weight-bold">${member.name}</h6></a>`
-                    : `<h6 class="font-weight-bold">${member.name}</h6>`;
+                    ? `<a href="${member.website}" target="_blank"><h6 class="bold">${member.name}</h6></a>`
+                    : `<h6 class="bold">${member.name}</h6>`;
                 return `
                     <div class="col-md-4 mb-4">
                         <div class="card border h-100">
                             <div class="card-body text-center">
                                 ${memberImage}
                                 ${memberName}
-                                <p class="text-muted small">${member.role}</p>
-                                <p class="small"><strong>Research:</strong> ${interests}</p>
-                                <p class="small"><strong>Education:</strong> ${member.education}</p>
+                                <p class="muted">${member.role}</p>
+                                <p><strong>Research:</strong> ${interests}</p>
+                                <p><strong>Education:</strong> ${member.education}</p>
                                 ${pastExperience}
                             </div>
                         </div>
