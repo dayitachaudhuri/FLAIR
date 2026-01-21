@@ -13,7 +13,7 @@ const maxIndex = Math.max(0, labImages.length - slidesToShow);
 
 function initLabSlider() {
     const sliderHTML = `
-        <div class="lab-slider">
+        <div class="slider-container">
             <div class="lab-slider-container">
                 <div class="lab-slides-wrapper">
                     ${labImages.map((img, index) => `

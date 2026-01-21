@@ -1,6 +1,43 @@
 let slideIndex = 1;
 let slideInterval;
 
+const sliderImages = [
+    'assets/imgs/slider/gallery-1.jpeg',
+    'assets/imgs/slider/gallery-2.jpeg',
+    'assets/imgs/slider/gallery-3.jpeg',
+    'assets/imgs/slider/gallery-4.jpeg',
+    'assets/imgs/slider/gallery-5.jpeg',
+    'assets/imgs/slider/gallery-6.jpeg'
+];
+
+function initSlider() {
+    const sliderHTML = `
+        <div class="slider-container">
+            ${sliderImages.map((img, index) => `
+                <div class="slide ${index === 0 ? 'active' : ''}">
+                    <img src="${img}" alt="Research Image ${index + 1}">
+                </div>
+            `).join('')}
+            <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                <i class="ti-angle-left">←</i>
+            </button>
+            <button class="slider-arrow next" onclick="changeSlide(1)">
+                <i class="ti-angle-right">→</i>
+            </button>
+            <div class="slider-dots">
+                ${sliderImages.map((_, index) => `
+                    <span class="dot ${index === 0 ? 'active' : ''}" onclick="currentSlide(${index + 1})"></span>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    const placeholder = document.getElementById('slider-placeholder');
+    if (placeholder) {
+        placeholder.innerHTML = sliderHTML;
+    }
+}
+
 function showSlide(n) {
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");
@@ -44,6 +81,7 @@ function startAutoSlide() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    initSlider();
     showSlide(slideIndex);
     startAutoSlide();
 });

@@ -9,12 +9,10 @@ function loadNavbar() {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto align-items-center">
                         <li class="nav-item"><a class="nav-link" href="index2.html#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index2.html#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="publications2.html">Publications</a></li>
                         <li class="nav-item"><a class="nav-link" href="index2.html#news">News</a></li>
                         <li class="nav-item"><a class="nav-link" href="index2.html#people">People</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://dayitachaudhuri.github.io/jekyll-blog/">Blog ↗</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index2.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="publications2.html">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
                     </ul>
                 </div>
             </div>

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     return `<a href="${url}" target="_blank" rel="noopener">${url}</a>`;
                 });
             }
+            
             function createNewsItem(newsItem) {
                 return `
                     <div class="news-item">
@@ -15,7 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 `;
             }
-            document.getElementById('news-list').innerHTML = data.news.map(createNewsItem).join('');
+            
+            // Sort news by date in descending order (latest first)
+            const sortedNews = [...data.news].sort((a, b) => {
+                const dateA = new Date(a.date);
+                const dateB = new Date(b.date);
+                return dateB - dateA; // Descending order
+            });
+            
+            document.getElementById('news-list').innerHTML = sortedNews.map(createNewsItem).join('');
         })
         .catch(error => {
             console.error('Error loading news:', error);
