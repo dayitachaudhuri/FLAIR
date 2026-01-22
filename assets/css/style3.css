@@ -387,160 +387,136 @@
     font-weight: 600;
 }
 
-.publications-list p {
-    font-size: 1rem;
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
 }
 
-.publications-list a {
+.publications-list h6 a:hover {
     color: var(--color-primary-red);
-    font-weight: normal;
-    font-size: 1rem;
+    text-decoration: underline;
 }
 
-.publications-list a:hover {
-    color: var(--color-text-dark);
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
 }
 
-/* All Publications Page */
-#all-publications-list {
-    background: var(--color-bg-cream);
-    padding: 40px;
-    border: 1px solid var(--color-border-light);
-}
-
-/* Publication Filter Buttons */
-.publication-filters {
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.filter-btn {
-    padding: 8px 20px;
-    background: var(--color-bg-cream);
-    border: 1px solid var(--color-border-light);
-    color: var(--color-text-dark);
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    outline: none;
-}
-
-.filter-btn:hover {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
-    border-color: var(--color-primary-red);
-}
-
-.filter-btn.active {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
-    border-color: var(--color-primary-red);
-}
-
-/* Publication Items */
-#all-publications-list .publication-item {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid var(--color-border-light);
-}
-
-#all-publications-list .publication-item:last-child {
-    border-bottom: none;
-}
-
-#all-publications-list .publication-title {
+/* Alumni Section - More Compact */
+#people h4 {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-text-dark);
-    margin-bottom: 10px;
-    line-height: 1.4;
+    margin-bottom: 1rem !important;
 }
 
-#all-publications-list .publication-title a {
-    color: var(--color-text-dark);
-    text-decoration: none;
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
 }
 
-#all-publications-list .publication-title a:hover {
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
     color: var(--color-primary-red);
-}
-
-#all-publications-list .publication-authors {
     font-size: 0.95rem;
-    color: var(--color-text-medium);
-    margin-bottom: 8px;
-    font-style: italic;
-}
-
-#all-publications-list .publication-venue {
-    font-size: 0.95rem;
-    color: var(--color-text-dark);
-    margin-bottom: 12px;
-    font-weight: 500;
-}
-
-#all-publications-list .publication-links {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 12px;
+    align-items: center;
 }
 
-#all-publications-list .publication-links a {
-    font-size: 0.9rem;
-    color: var(--color-primary-red);
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
     text-decoration: none;
-    padding: 6px 12px;
-    border: 1px solid var(--color-border-light);
-    background: var(--color-bg-cream);
-    display: inline-block;
 }
 
-#all-publications-list .publication-links a:hover {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
-    border-color: var(--color-primary-red);
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
 }
 
-.view-more-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: var(--color-bg-cream);
-    border: 1px solid var(--color-border-light);
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
     color: var(--color-primary-red);
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
 }
 
-.view-more-btn:hover {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
-    border-color: var(--color-primary-red);
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* Scroll indicator for news section */
-.news-list-scrollable::after {
-    content: '';
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
     position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    background: linear-gradient(to top, var(--color-bg-cream), transparent);
-    pointer-events: none;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
 }
 
-/* ============================================
-   Publications Section Styles
-   ============================================ */
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
 
-/* Publications List */
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
 .publications-list {
     background: var(--color-bg-cream);
     padding: 30px;
@@ -569,139 +545,3060 @@
     font-weight: 600;
 }
 
-.publications-list p {
-    font-size: 1rem;
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
 }
 
-.publications-list a {
+.publications-list h6 a:hover {
     color: var(--color-primary-red);
-    font-weight: normal;
-    font-size: 1rem;
+    text-decoration: underline;
 }
 
-.publications-list a:hover {
-    color: var(--color-text-dark);
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
 }
 
-/* All Publications Page */
-#all-publications-list {
-    background: var(--color-bg-cream);
-    padding: 40px;
-    border: 1px solid var(--color-border-light);
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
 }
 
-/* Publication Filter Buttons */
-.publication-filters {
-    margin-bottom: 30px;
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    align-items: center;
 }
 
-.filter-btn {
-    padding: 8px 20px;
-    background: var(--color-bg-cream);
-    border: 1px solid var(--color-border-light);
-    color: var(--color-text-dark);
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
     font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    outline: none;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
 }
 
-.filter-btn:hover {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
     border-color: var(--color-primary-red);
-}
-
-.filter-btn.active {
-    background: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
     color: var(--color-text-white);
-    border-color: var(--color-primary-red);
 }
 
-/* Publication Items */
-#all-publications-list .publication-item {
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--color-border-light);
 }
 
-#all-publications-list .publication-item:last-child {
+.publications-list li:last-child {
     border-bottom: none;
 }
 
-#all-publications-list .publication-title {
-    font-size: 1.1rem;
-    font-weight: 600;
+.publications-list h6 {
     color: var(--color-text-dark);
+    font-size: 1rem;
     margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-#all-publications-list .publication-title a {
-    color: var(--color-text-dark);
-    text-decoration: none;
-}
-
-#all-publications-list .publication-title a:hover {
-    color: var(--color-primary-red);
-}
-
-#all-publications-list .publication-authors {
-    font-size: 0.95rem;
-    color: var(--color-text-medium);
-    margin-bottom: 8px;
-    font-style: italic;
-}
-
-#all-publications-list .publication-venue {
-    font-size: 0.95rem;
-    color: var(--color-text-dark);
-    margin-bottom: 12px;
-    font-weight: 500;
-}
-
-#all-publications-list .publication-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 12px;
-}
-
-#all-publications-list .publication-links a {
-    font-size: 0.9rem;
-    color: var(--color-primary-red);
-    text-decoration: none;
-    padding: 6px 12px;
-    border: 1px solid var(--color-border-light);
-    background: var(--color-bg-cream);
-    display: inline-block;
-}
-
-#all-publications-list .publication-links a:hover {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
-    border-color: var(--color-primary-red);
-}
-
-.view-more-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: var(--color-bg-cream);
-    border: 1px solid var(--color-border-light);
-    color: var(--color-primary-red);
-    font-size: 0.95rem;
     font-weight: 600;
-    cursor: pointer;
-    text-align: center;
 }
 
-.view-more-btn:hover {
-    background: var(--color-primary-red);
-    color: var(--color-text-white);
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
     border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background-color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-white);
+}
+
+
+/* ---- Publications Section ---- */
+.publications-list {
+    background: var(--color-bg-cream);
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+}
+
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publications-list h6 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.publications-list h6 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
+
+.publications-list h6 a:hover {
+    color: var(--color-primary-red);
+    text-decoration: underline;
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
 }

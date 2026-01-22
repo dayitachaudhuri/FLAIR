@@ -112,10 +112,15 @@ function renderPublications(targetId, publications) {
                </div>`
             : '';
         
+        // Make title clickable if URL exists, otherwise use PDF link or plain text
+        const titleHTML = pub.url && pub.url.trim() !== ''
+            ? `<a href="${pub.url}" target="_blank">${pub.title}</a>`
+            : (pub.pdf ? `<a href="${pub.pdf}" target="_blank">${pub.title}</a>` : pub.title);
+        
         html += `
             <div class="publication-item">
                 <div class="publication-title">
-                    ${pub.pdf ? `<a href="${pub.pdf}" target="_blank">${pub.title}</a>` : pub.title}
+                    ${titleHTML}
                 </div>
                 <div class="publication-authors">${pub.authors}</div>
                 <div class="publication-venue">
@@ -230,13 +235,17 @@ function renderRecentPublications(containerId, limit = 5) {
             const recentPubs = sorted.slice(0, limit);
             const html = `
                 <ul>
-                    ${recentPubs.map(pub => `
-                        <li>
-                            <h6><a href="${pub.pdf || '#'}" target="_blank">${pub.title}</a></h6>
-                            <p>${pub.authors}<br>
-                            <em>${pub.venue}${pub.year ? ` (${pub.year})` : ''}</em></p>
-                        </li>
-                    `).join('')}
+                    ${recentPubs.map(pub => {
+                        // Use URL if available, otherwise fall back to PDF or #
+                        const link = pub.url && pub.url.trim() !== '' ? pub.url : (pub.pdf || '#');
+                        return `
+                            <li>
+                                <h6><a href="${link}" target="_blank">${pub.title}</a></h6>
+                                <p>${pub.authors}<br>
+                                <em>${pub.venue}${pub.year ? ` (${pub.year})` : ''}</em></p>
+                            </li>
+                        `;
+                    }).join('')}
                 </ul>
             `;
             document.getElementById(containerId).innerHTML = html;

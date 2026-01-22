@@ -1,11 +1,30 @@
 {
   "publications": [
     {
+      "title": "TALES: A Taxonomy and Analysis of Cultural Representations in LLM-generated Stories",
+      "venue": "ACM Conference on Human Factors in Computing Systems (CHI 2026)",
+      "year": "2025",
+      "authors": "Kirti Bhagat, Shaily Bhatt, Athul Velagapudi, Aditya Vashistha, Shachi Dave, Danish Pruthi",
+      "awards": "",
+      "url": "https://arxiv.org/abs/2511.21322",
+      "tags": []
+    },
+    {
+      "title": "Beyond World Models: Rethinking Understanding in AI Models",
+      "venue": "AAAI Conference on Artificial Intelligence (AAAI 2026)",
+      "year": "2025",
+      "authors": "Tarun Gupta, Danish Pruthi",
+      "awards": "",
+      "url": "https://arxiv.org/abs/2511.12239",
+      "tags": []
+    },
+    {
       "title": "All That Glitters is Not Novel: Plagiarism in AI Generated Research",
       "venue": "Association for Computational Linguistics (ACL)",
       "year": "2025",
       "authors": "Tarun Gupta, Danish Pruthi",
       "awards": "Outstanding Paper Award (Top 1% of accepted papers)",
+      "url": "",
       "tags": ["AI Detection", "AI Ethics"]
     },
     {
@@ -14,6 +33,7 @@
       "year": "2025",
       "authors": "Prarabdh Shukla, Wei Yin Chong*, Yash Patel, Brennan Schaffner, Danish Pruthi, Arjun Bhagoji",
       "awards": "Senior Area Chairs' Highlights (Top 3% of accepted papers)",
+      "url": "",
       "tags": ["Content Moderation", "AI Ethics"]
     },
     {
@@ -22,6 +42,7 @@
       "year": "2025",
       "authors": "Saksham Rastogi, Pratyush Maini, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["Watermarking", "AI Safety"]
     },
     {
@@ -30,6 +51,7 @@
       "year": "2025",
       "authors": "Kinshuk Vasisht, Navreet Kaur, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["Abstention", "AI Safety"]
     },
     {
@@ -38,6 +60,7 @@
       "year": "2025",
       "authors": "Kirti Bhagat, Kinshuk Vasisht, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["Bias", "Geographical Bias", "AI Ethics"]
     },
     {
@@ -46,6 +69,7 @@
       "year": "2024",
       "authors": "Saksham Rastogi, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["Watermarking", "AI Safety"]
     },
     {
@@ -54,6 +78,7 @@
       "year": "2024",
       "authors": "Anirudh Ajith, Sameer Singh, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["Watermarking", "AI Safety"]
     },
     {
@@ -62,6 +87,7 @@
       "year": "2024",
       "authors": "Navreet Kaur, Monojit Choudhury, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["LLMs for Healthcare", "AI Ethics", "NLP Applications"]
     },
     {
@@ -70,6 +96,7 @@
       "year": "2023",
       "authors": "Abhipsa Basu, R. Venkatesh Babu, Danish Pruthi",
       "awards": "",
+      "url": "",
       "tags": ["Bias", "Geographical Bias", "AI Ethics", "Text-to-Image Models"]
     }
   ]
