@@ -1,0 +1,395 @@
+/* ============================================
+   Custom Styles for index3.html
+   ============================================ */
+
+/* Enhanced Color Variables */
+:root {
+    --color-primary-red-light: #f9e5e1;
+    --color-primary-red-lighter: #fdf5f3;
+    --color-primary-red-accent: #e64d4d;
+}
+
+/* News Section Wrapper */
+.news-section-wrapper {
+    position: sticky;
+    top: 100px;
+}
+
+/* News Section Container - Fixed Height */
+.news-list-scrollable {
+    max-height: 700px;
+    min-height: 400px;
+    height: 700px;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    padding: 20px;
+    padding-right: 10px;
+    scroll-behavior: smooth;
+    border: 1px solid var(--color-border-light);
+    border-radius: 0.25rem;
+    background: var(--color-bg-cream);
+    display: block;
+}
+
+/* Ensure news items don't break the container */
+.news-list-scrollable .news-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.news-list-scrollable .news-item:last-child {
+    border-bottom: none;
+}
+
+/* Highlight news title with primary color */
+.news-list-scrollable .news-item h6 {
+    color: var(--color-primary-red);
+    font-weight: 600;
+}
+
+/* Custom scrollbar for news list - WebKit browsers (Chrome, Safari, Edge) */
+.news-list-scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.news-list-scrollable::-webkit-scrollbar-track {
+    background: var(--color-bg-cream);
+    border-radius: 4px;
+}
+
+.news-list-scrollable::-webkit-scrollbar-thumb {
+    background: var(--color-primary-red);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.news-list-scrollable::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-dark);
+}
+
+/* Firefox scrollbar styling */
+.news-list-scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-red) var(--color-bg-cream);
+}
+
+/* Larger Slider Section */
+.slider-section-large .slider-container {
+    width: 85%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    padding: 30px;
+    margin: auto;
+}
+
+.slider-section-large .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 15px solid var(--color-text-white);
+    box-shadow: var(--shadow-lg);
+    background: var(--color-text-white);
+}
+
+/* Adjust slider arrows for larger size */
+.slider-section-large .slider-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+}
+
+.slider-section-large .slider-arrow.prev {
+    left: 20px;
+}
+
+.slider-section-large .slider-arrow.next {
+    right: 20px;
+}
+
+/* Adjust slider dots for larger size */
+.slider-section-large .slider-dots {
+    bottom: 25px;
+    gap: 10px;
+}
+
+.slider-section-large .dot {
+    width: 12px;
+    height: 12px;
+}
+
+/* People Section - Light Red Background */
+#people {
+    background: var(--color-primary-red-light) !important;
+    position: relative;
+    padding: 3rem 0 !important;
+}
+
+#people::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, var(--color-bg-cream), var(--color-primary-red-light));
+}
+
+#people::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to top, var(--color-bg-cream), var(--color-primary-red-light));
+}
+
+/* People Section Title with Primary Color */
+#people .section-title {
+    color: var(--color-primary-red);
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    margin-bottom: 2rem !important;
+}
+
+/* Remove old person-card styles - now using person-simple for all */
+
+#people .person-photo {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--color-primary-red);
+}
+
+#people .person-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+#people .person-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+#people .person-affiliation {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+#people .person-links {
+    font-size: 1rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Compact Simple Person Cards - NO HOVER EFFECTS */
+#people .person-simple {
+    background: var(--color-text-white);
+    padding: 20px;
+    transition: none !important;
+    transform: none !important;
+    border: 1px solid var(--color-border-light);
+    margin: 0 auto;
+}
+
+#people .person-simple:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+#people .person-simple img {
+    width: 100px;
+    height: 100px;
+    transition: none !important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid var(--color-primary-red);
+}
+
+#people .person-simple h6 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#people .person-simple h6 a {
+    transition: color 0.3s ease;
+    font-family: inherit;
+}
+
+#people .person-simple h6 a:hover {
+    color: var(--color-primary-red-accent) !important;
+    text-decoration: underline !important;
+}
+
+#people .person-simple p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+}
+
+/* Special styling for PI card */
+#people .person-card-pi {
+    border: 2px solid var(--color-primary-red);
+}
+
+/* Alumni Section - More Compact */
+#people h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Alumni Section Styling */
+#people #alumni-dropdowns .card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+#people #alumni-dropdowns .card-header {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+#people #alumni-dropdowns .btn-link {
+    color: var(--color-primary-red);
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#people #alumni-dropdowns .btn-link:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: none;
+}
+
+#people #alumni-dropdowns .btn-link::after {
+    content: '▼';
+    margin-left: 8px;
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+#people #alumni-dropdowns .btn-link.collapsed::after {
+    content: '▶';
+}
+
+#people #alumni-dropdowns .card-body {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-left: 2px solid var(--color-primary-red-light);
+    margin-left: 0.5rem;
+}
+
+#people #alumni-dropdowns .collapse {
+    border: none;
+}
+
+/* Contact Section Enhancements */
+#contact .section-title {
+    color: var(--color-primary-red);
+}
+
+#contact .contact-card h5 {
+    color: var(--color-primary-red);
+    border-bottom: 2px solid var(--color-primary-red-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section Title */
+#about .section-title {
+    color: var(--color-primary-red);
+}
+
+/* News Section Title */
+#news {
+    position: sticky;
+    top: 80px;
+    background: var(--color-bg-cream);
+    padding-bottom: 10px;
+    z-index: 10;
+    color: var(--color-primary-red);
+}
+
+/* Primary Color Accents for Links */
+#about a,
+#contact a {
+    color: var(--color-primary-red);
+    transition: color 0.3s ease;
+}
+
+#about a:hover,
+#contact a:hover {
+    color: var(--color-primary-red-accent);
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 991.98px) {
+    .slider-section-large .slider-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .news-list-scrollable {
+        max-height: 500px;
+        height: 500px;
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 767.98px) {
+    .slider-section-large .slider-container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .slider-section-large .slide img {
+        border: 10px solid var(--color-text-white);
+    }
+    
+    .slider-section-large .slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .news-list-scrollable {
+        max-height: 400px;
+        height: 400px;
+    }
+}
+
+/* About section spacing adjustments */
+#about .mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+/* Scroll indicator for news section */
+.news-list-scrollable::after {
+    content: '';
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to top, var(--color-bg-cream), transparent);
+    pointer-events: none;
+}

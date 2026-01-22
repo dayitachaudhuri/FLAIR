@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
             function createMemberCard(member) {
                 const memberImage = member.image_filename
                     ? `<img src="assets/imgs/team/${member.image_filename}" alt="${member.name}">`
-                    : `<div style="width: 100px; height: 100px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;"><i class="ti-user" style="font-size: 40px; color: #999;"></i></div>`;
+                    : `<div style="width: 100px; height: 100px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;"><i class="ti-user" style="font-size: 50px; color: #999;"></i></div>`;
                 
                 const memberName = member.website && member.website.trim() !== ''
                     ? `<a href="${member.website}" target="_blank"><h6>${member.name}</h6></a>`
                     : `<h6>${member.name}</h6>`;
                 
                 return `
-                    <div class="col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                         <div class="person-simple">
                             ${memberImage}
                             ${memberName}
